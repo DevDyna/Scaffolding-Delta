@@ -1,16 +1,16 @@
-All resource pack files ->
+All resource pack files
 
 \assets\minecraft\
 
 #
-Package fast ->
+Package fast
 
 \distance\fast
 
 \emit\fast
 
 #
-Package fancy ->
+Package fancy
 
 \distance\fancy
 
