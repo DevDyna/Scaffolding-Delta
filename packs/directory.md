@@ -3,14 +3,18 @@ All resource pack files
 \assets\minecraft\
 
 #
-Package fast
+Packages structure
+
+#
+
+Fast
 
 \distance\fast
 
 \emit\fast
 
 #
-Package fancy
+Fancy
 
 \distance\fancy
 
