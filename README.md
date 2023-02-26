@@ -1,5 +1,5 @@
 # Scaffolding-Delta
-Minecraft Better Scaffolding block Resource Pack
+Minecraft Better Scaffolding Resource Pack
 
 
 
