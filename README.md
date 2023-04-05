@@ -35,4 +35,4 @@ https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fancyshowdi
 ___
 FILE PACKAGER
 
-https://github.com/DevDyna/SD-packager
+https://github.com/DevDyna/Pack-Composer
