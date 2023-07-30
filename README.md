@@ -34,5 +34,6 @@ Fancy
 https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fancyshowdistance-module
 ___
 FILE PACKAGER
+[NO MORE USED]
 
 https://github.com/DevDyna/Pack-Composer
