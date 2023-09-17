@@ -1,4 +1,4 @@
-@echo off
+::@echo off
 ::create directory
 mkdir SD\Pack-fast
 mkdir SD\Pack-fancy
@@ -39,3 +39,50 @@ robocopy /E distance\fancy SD\distance-fancy
 robocopy /E emit\fast SD\emit-fast
 ::copy files to SD/emit-fast
 robocopy /E emit\fancy SD\emit-fancy
+
+cd SD
+mkdir ZIP
+
+cd CTM
+tar.exe -cf CTM.zip assets pack.png pack.mcmeta
+robocopy . .. CTM.zip
+cd ..
+robocopy . ZIP CTM.zip /MOVE
+
+
+cd distance-fancy
+tar.exe -cf distance-fancy.zip assets pack.png pack.mcmeta
+robocopy . .. distance-fancy.zip
+cd ..
+robocopy . ZIP distance-fancy.zip /MOVE
+
+cd distance-fast
+tar.exe -cf distance-fast.zip assets pack.png pack.mcmeta
+robocopy . .. distance-fast.zip
+cd ..
+robocopy . ZIP distance-fast.zip /MOVE
+
+cd emit-fancy
+tar.exe -cf emit-fancy.zip assets pack.png pack.mcmeta
+robocopy . .. emit-fancy.zip
+cd ..
+robocopy . ZIP emit-fancy.zip /MOVE
+
+cd emit-fast
+tar.exe -cf emit-fast.zip assets pack.png pack.mcmeta
+robocopy . .. emit-fast.zip
+cd ..
+robocopy . ZIP emit-fast.zip /MOVE
+
+cd Pack-fancy
+tar.exe -cf Pack-fancy.zip assets pack.png pack.mcmeta
+robocopy . .. Pack-fancy.zip
+cd ..
+robocopy . ZIP Pack-fancy.zip /MOVE
+
+cd Pack-fast
+tar.exe -cf Pack-fast.zip assets pack.png pack.mcmeta
+robocopy . .. Pack-fast.zip
+cd ..
+robocopy . ZIP Pack-fast.zip /MOVE
+
