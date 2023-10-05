@@ -27,12 +27,14 @@ echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
 echo ^> package-fancy
 TIMEOUT /NOBREAK /T 0 > nul
+
 ::fast package
 cd fast
 echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
 echo ^> package-fast
 TIMEOUT /NOBREAK /T 0 > nul
+
 
 ::CTM module
 cd ..
@@ -43,18 +45,21 @@ cd ..
 echo ^> ctm-module
 TIMEOUT /NOBREAK /T 0 > nul
 
+
 ::distance fancy
 cd distance/fancy
 echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
 echo ^> distance-fancy-module
 TIMEOUT /NOBREAK /T 0 > nul
+
 ::distance fast
 cd fast
 echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
 echo ^> distance-fast-module
 TIMEOUT /NOBREAK /T 0 > nul
+
 
 ::emit fancy
 cd ..
@@ -64,11 +69,14 @@ echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
 echo ^> emit-fancy-module
 TIMEOUT /NOBREAK /T 0 > nul
+
 ::emit fast
 cd fast
 echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 echo ^> emit-fast-module
 TIMEOUT /NOBREAK /T 0 > nul
+
+
 echo:
 echo Updated all files to %version%
 TIMEOUT /NOBREAK /T 1 > nul
