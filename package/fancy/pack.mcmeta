@@ -1,6 +1,1 @@
-{
-	"pack": {
-		"pack_format": 12,
-		"description": "Scaffolding Delta Package"
-	}
-}
+{"pack": {"pack_format":15,"description": "Scaffolding Delta Package"}} 

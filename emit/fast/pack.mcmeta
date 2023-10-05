@@ -1,6 +1,1 @@
-{
-	"pack": {
-		"pack_format": 12,
-		"description": "Scaffolding Delta module \n\u00A74Require FastDistanceModule!"
-	}
-}
+{"pack": {"pack_format":15,"description": "Scaffolding Delta Module\n\u00A74Require DistanceModule"}} 
