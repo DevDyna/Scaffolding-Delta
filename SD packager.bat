@@ -25,6 +25,7 @@ TIMEOUT /NOBREAK /T 0 > nul
 mkdir ZIP\temp\distance-fancy
 echo ^> ZIP\temp\distance-fancy
 TIMEOUT /NOBREAK /T 0 > nul
+
 echo #robocopy files on directories
 TIMEOUT /NOBREAK /T 1 > nul
 
@@ -137,3 +138,7 @@ TIMEOUT /NOBREAK /T 1 > nul
 ::rem temp packs
 cd ..
 rmdir /s /q temp
+
+echo:
+echo Packaged all files on zip/
+TIMEOUT /NOBREAK /T 1 > nul
