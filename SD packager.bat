@@ -26,9 +26,36 @@ mkdir ZIP\temp\distance-fancy
 echo ^> ZIP\temp\distance-fancy
 TIMEOUT /NOBREAK /T 0 > nul
 
+echo #robocopy pack.mcmeta on all modules
+TIMEOUT /NOBREAK /T 1 > nul
+::copy pack.mcmeta on directories
+robocopy . ctm /is pack.mcmeta > nul
+echo ^> ctm
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . distance\fancy /is pack.mcmeta > nul
+echo ^> distance-fancy
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . distance\fast /is pack.mcmeta > nul
+echo ^> distance-fast
+
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . emit\fancy /is pack.mcmeta > nul
+echo ^> emit-fancy
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . emit\fast /is pack.mcmeta > nul
+echo ^> emit-fast
+
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . package\fancy /is pack.mcmeta > nul
+echo ^> package-fancy
+TIMEOUT /NOBREAK /T 0 > nul
+robocopy . package\fast /is pack.mcmeta > nul
+echo ^> package-fast
+
+TIMEOUT /NOBREAK /T 0 > nul
+
 echo #robocopy files on directories
 TIMEOUT /NOBREAK /T 1 > nul
-
 ::copy files to ZIP/Pack-fast
 ::from package
 robocopy /E package\fast ZIP\temp\Pack-fast > nul
