@@ -58,6 +58,7 @@ TIMEOUT /NOBREAK /T 0 > nul
 
 ::emit fancy
 cd ..
+set desc=%desc%\n\u00A74Require DistanceModule
 cd emit/fancy
 echo {"pack": {"pack_format":%version%,"description": "%desc%"}} > pack.mcmeta
 cd ..
