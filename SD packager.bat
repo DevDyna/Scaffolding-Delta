@@ -100,7 +100,7 @@ cd ZIP/temp
 
 ::CTM zip and move out
 cd CTM
-tar.exe -cf CTM.zip assets pack.png pack.mcmeta
+tar.exe -a -cf CTM.zip assets pack.png pack.mcmeta
 robocopy . .. CTM.zip /MOVE > nul
 cd ..
 robocopy . .. CTM.zip /MOVE > nul
@@ -109,7 +109,7 @@ echo ^> CTM-module
 
 :: distance-fancy zip and move out
 cd distance-fancy
-tar.exe -cf distance-fancy.zip assets pack.png pack.mcmeta
+tar.exe -a -cf distance-fancy.zip assets pack.png pack.mcmeta
 robocopy . .. distance-fancy.zip /MOVE > nul
 cd ..
 robocopy . .. distance-fancy.zip /MOVE > nul
@@ -118,7 +118,7 @@ echo ^> distance-fancy-module
 
 :: distance-fast zip and move out
 cd distance-fast
-tar.exe -cf distance-fast.zip assets pack.png pack.mcmeta
+tar.exe -a -cf distance-fast.zip assets pack.png pack.mcmeta
 robocopy . .. distance-fast.zip /MOVE > nul
 cd ..
 robocopy . .. distance-fast.zip /MOVE > nul
@@ -127,7 +127,7 @@ echo ^> distance-fast-module
 
 :: emit-fancy zip and move out
 cd emit-fancy
-tar.exe -cf emit-fancy.zip assets pack.png pack.mcmeta
+tar.exe -a -cf emit-fancy.zip assets pack.png pack.mcmeta
 robocopy . .. emit-fancy.zip /MOVE > nul
 cd ..
 robocopy . .. emit-fancy.zip /MOVE > nul
@@ -136,7 +136,7 @@ echo ^> emit-fancy-module
 
 :: emit-fast zip and move out
 cd emit-fast
-tar.exe -cf emit-fast.zip assets pack.png pack.mcmeta
+tar.exe -a -cf emit-fast.zip assets pack.png pack.mcmeta
 robocopy . .. emit-fast.zip /MOVE > nul
 cd ..
 robocopy . .. emit-fast.zip /MOVE > nul
@@ -145,7 +145,7 @@ echo ^> emit-fast-module
 
 :: Pack-fancy zip and move out
 cd Pack-fancy
-tar.exe -cf Pack-fancy.zip assets pack.png pack.mcmeta
+tar.exe -a -cf Pack-fancy.zip assets pack.png pack.mcmeta
 robocopy . .. Pack-fancy.zip /MOVE > nul
 cd ..
 robocopy . .. Pack-fancy.zip /MOVE > nul
@@ -154,7 +154,7 @@ echo ^> Pack-fancy
 
 :: Pack-fast zip and move out
 cd Pack-fast
-tar.exe -cf Pack-fast.zip assets pack.png pack.mcmeta
+tar.exe -a -cf Pack-fast.zip assets pack.png pack.mcmeta
 robocopy . .. Pack-fast.zip /MOVE > nul
 cd ..
 robocopy . .. Pack-fast.zip /MOVE > nul
