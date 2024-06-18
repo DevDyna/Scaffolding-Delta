@@ -1,13 +1,25 @@
 @echo off
+
+::define pack version
+FOR /F %%i IN (pack.mcmeta) DO echo #Old JSON %%i
+
+set /p input=^>Enter pack version:  
+
+echo {"pack":{"pack_format":%input%,"description":"Scaffolding-Delta-Collection"}} > pack.mcmeta
+TIMEOUT /NOBREAK /T 1 > nul
+FOR /F %%i IN (pack.mcmeta) DO @echo Result ^-^> %%i
+
+::create directory
 echo #creating directories
 TIMEOUT /NOBREAK /T 1 > nul
 echo ^> ZIP\temp
-::create directory
+
 mkdir ZIP\temp\Pack-fast
 echo ^> ZIP\temp\Pack-fast
 
 mkdir ZIP\temp\Pack-fancy
 echo ^> ZIP\temp\Pack-fancy
+
 
 ::modules
 mkdir ZIP\temp\CTM
@@ -28,6 +40,8 @@ TIMEOUT /NOBREAK /T 0 > nul
 
 echo #robocopy pack.mcmeta on all modules
 TIMEOUT /NOBREAK /T 1 > nul
+
+
 ::copy pack.mcmeta on directories
 robocopy . ctm /is pack.mcmeta > nul
 echo ^> ctm
@@ -56,6 +70,7 @@ TIMEOUT /NOBREAK /T 0 > nul
 
 echo #robocopy files on directories
 TIMEOUT /NOBREAK /T 1 > nul
+
 ::copy files to ZIP/Pack-fast
 ::from package
 robocopy /E package\fast ZIP\temp\Pack-fast > nul
@@ -160,12 +175,29 @@ cd ..
 robocopy . .. Pack-fast.zip /MOVE > nul
 
 echo ^> Pack-fast
-echo #removing zip/temp directory
+echo #removing temp files
 TIMEOUT /NOBREAK /T 1 > nul
+
 ::rem temp packs
 cd ..
 rmdir /s /q temp
 
-echo:
+::rem pack mcmetas
+cd ../ctm
+del pack.mcmeta
+cd ../distance/fancy
+del pack.mcmeta
+cd ../fast
+del pack.mcmeta
+cd ../../emit/fancy
+del pack.mcmeta
+cd ../fast
+del pack.mcmeta
+cd ../../package/fancy
+del pack.mcmeta
+cd ../fast
+del pack.mcmeta
+
+
 echo Packaged all files on zip/
-TIMEOUT /NOBREAK /T 1 > nul
+TIMEOUT /NOBREAK /T 3 > nul
