@@ -1,40 +1,6 @@
 # Scaffolding-Delta
-Minecraft Better Scaffolding Resource Pack
+DEPRECATED REPOSITORY
+Moved on [Vanilla Expansion](https://github.com/DevDyna/Vanilla-Expansion) as module
 
-
-
-___
-PACKAGES
-
-Fast
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fast-edition
-
-Fancy
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fancy-edition
-___
-MODULES
-
-CTM
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-ctm-module
-#
-EMIT_LIGHT
-
-Fast
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fastemitlight-module
-
-Fancy
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fancyemitlight-module
-#
-SHOW_DISTANCE
-
-Fast
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fastshowdistance-module
-
-Fancy
-https://www.curseforge.com/minecraft/texture-packs/scaffolding-delta-fancyshowdistance-module
-___
-FILE PACKAGER
-[NO MORE USED]
-
-https://github.com/DevDyna/Pack-Composer
+Old branches [here](https://github.com/DevDyna/Scaffolding-Delta/tree/21.x)
 
